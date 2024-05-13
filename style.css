@@ -1,0 +1,196 @@
+/* - Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%) */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0,0%,98%);
+    /* overflow: hidden; */
+    height: 100vh;
+    font-weight: 400;
+}
+
+nav{
+    /* border: 3px solid black; */
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+}
+nav .image{
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+    width: 84px;
+}
+nav .menu_bar{
+    display: flex;
+    flex: 1;
+}
+
+nav .menu_bar ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+}
+nav .menu_bar ul li{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0px 20px;
+    cursor: pointer;
+    color:  hsl(0, 0%, 41%);
+}
+
+nav .menu_bar ul .expand{
+    display: flex;
+
+}
+
+.expand span{
+    margin: auto 5px;
+    width: 6px;
+    height: 10px;
+}
+
+nav .registration{
+    display: flex;
+    flex-grow: 1;
+    /* border: 3px dotted green; */
+    align-items: end;
+    justify-content: end;
+    /* flex-direction: row; */
+}
+
+nav .registration button{
+    margin: 0px 20px ;
+    padding: 10px 15px;
+    border-radius:12px ;
+    border: none;
+    background-color: hsl(0,0%,98%);
+    color:  hsl(0, 0%, 41%);
+    cursor: pointer;
+}
+
+nav .registration button:last-child{
+    border: 2px solid hsl(0, 0%, 41%);
+}
+
+.hidden_features{
+    background-color: whitesmoke;
+    box-shadow: 1px 2px 6px black;
+    display: none;
+    border-radius: 12px;
+    padding: 10px;
+    position: absolute;
+    top:60px;
+    left: 15%;
+}
+
+.hidden_features ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+}
+.hidden_features ul li{
+    display: flex;
+    cursor: pointer;
+}
+
+.hidden_features ul li div{
+    margin: 8px;
+    color: hsl(0, 0%, 41%);
+}
+
+.hidden_company_details{
+    display: none;
+    position:absolute;
+    background-color: whitesmoke;
+    box-shadow: 1px 2px 6px black;
+    padding: 10px;
+    border-radius: 12px;
+    top:60px;
+    left: 25%;
+}
+.hidden_company_details h5{
+    margin: 10px;
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+}
+
+main{
+    /* border: 3px dotted; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 600px;
+    grid-gap: 1rem;
+    width: 80%;
+    margin: 30px auto;
+}
+
+main .more_info{
+    display: flex;
+    flex-direction: column;
+}
+main .more_info h2{
+    color:hsl(0, 0%, 8%);
+    font-size: 3.7rem;
+    line-height: 3rem;
+    margin-top: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+main .more_info p{
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    margin: 40px 0px;
+    color:  hsl(0, 0%, 41%);
+}
+
+main .more_info button{
+    width: 30%;
+    padding: 15px;
+    cursor: pointer;
+    color:  hsl(0, 0%, 98%);
+    background-color:  hsl(0, 0%, 8%);
+    border-radius: 12px;
+}
+
+main .more_info .images_logo{
+    display: flex;
+    margin: auto 0px;
+}
+
+main .more_info .images_logo div{
+    margin-right: 12px;
+}
+
+
+main .image_area{
+    padding: 10px;
+}
+
+.active{
+    display: block;
+}
